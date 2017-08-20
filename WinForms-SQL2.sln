@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForms-SQL2", "WinForms-SQL2\WinForms-SQL2.csproj", "{B52BC998-8A2D-4A4D-AF9E-EA67F8E85E4D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B52BC998-8A2D-4A4D-AF9E-EA67F8E85E4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B52BC998-8A2D-4A4D-AF9E-EA67F8E85E4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B52BC998-8A2D-4A4D-AF9E-EA67F8E85E4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B52BC998-8A2D-4A4D-AF9E-EA67F8E85E4D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {64CEE9F3-5EE1-46E7-B7F7-A3311621EA93}
+	EndGlobalSection
+EndGlobal
