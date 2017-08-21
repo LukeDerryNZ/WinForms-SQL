@@ -7,6 +7,8 @@ namespace WinForms_SQL2
 {
     public partial class Form1 : Form
     {
+   
+        private string defaultQuery = "SELECT * FROM CUSTOMERS";
 
         // Initialize the form.
         public Form1()
@@ -22,7 +24,7 @@ namespace WinForms_SQL2
             this.customersTableAdapter.Fill(this.nORTHWNDDataSet.Customers);
             // Bind the DataGridView to the BindingSource
             customersDataGridView.DataSource = nORTHWNDDataSetBindingSource;
-            GetData("SELECT * FROM CUSTOMERS;");
+            GetData(defaultQuery);
         }
 
 
@@ -36,7 +38,7 @@ namespace WinForms_SQL2
                 if ( String.IsNullOrWhiteSpace(queryStr)) {
                     MessageBox.Show("Please enter an SQL Query", "Error");
                     // Fill textbox with an example query string
-                    textBox1.Text = "SELECT * FROM CUSTOMERS;";
+                    textBox1.Text = "Example: "+defaultQuery;
                     return;
                 }
 
@@ -44,7 +46,7 @@ namespace WinForms_SQL2
                 String connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\NORTHWND.MDF;Integrated Security=True;Connect Timeout=30";
 
                 // Create a new data adapter based on the specified query.
-                dataAdapter = new SqlDataAdapter(queryStr, connectionString);
+                dataAdapter = new SqlDataAdapter(queryStr+";", connectionString);
 
                 // Create a command builder to generate SQL update, insert, and
                 // delete commands based on selectCommand. These are used to
@@ -70,7 +72,7 @@ namespace WinForms_SQL2
         private void resetButton_Click(object sender, EventArgs e)
         {
             // Reload all CUSTOMER entries from the database.
-            GetData("SELECT * FROM CUSTOMERS;");
+            GetData(defaultQuery);
             // And clear the textbox
             textBox1.Clear();
         }
@@ -93,7 +95,7 @@ namespace WinForms_SQL2
         {
             MessageBox.Show("Created By Luke Derry - Aug 2017\n\nUsage:\n" +
                                     "- Enter sql query into the text box such as:\n" +
-                                    "- 'SELECT * FROM CUSTOMERS WHERE City = 'London';'\n" +
+                                    "- SELECT * FROM CUSTOMERS WHERE City = 'London'\n" +
                                     "- Note that this enters a pure string as the query, as such is not safe.\n" +
                                     "- Included tables are: CUSTOMERS, SUPPLIERS.\n" +
                                     "- Reset button returns view of all entries of CUSTOMER table.\n" +

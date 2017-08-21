@@ -211,7 +211,7 @@ namespace WinForms_SQL2
             // 
             this.Button_SubmitQuery.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Button_SubmitQuery.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_SubmitQuery.Location = new System.Drawing.Point(329, 12);
+            this.Button_SubmitQuery.Location = new System.Drawing.Point(371, 12);
             this.Button_SubmitQuery.Name = "Button_SubmitQuery";
             this.Button_SubmitQuery.Size = new System.Drawing.Size(106, 23);
             this.Button_SubmitQuery.TabIndex = 3;
@@ -223,14 +223,15 @@ namespace WinForms_SQL2
             // 
             this.textBox1.Location = new System.Drawing.Point(13, 42);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(422, 20);
+            this.textBox1.Size = new System.Drawing.Size(464, 20);
             this.textBox1.TabIndex = 4;
-            this.textBox1.Text = "SELECT * FROM CUSTOMERS WHERE City=\'London\';";
+            this.textBox1.Text = "SELECT * FROM CUSTOMERS WHERE City=\'London\'";
             // 
             // Button_About
             // 
             this.Button_About.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Button_About.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_About.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_About.Location = new System.Drawing.Point(526, 12);
             this.Button_About.Name = "Button_About";
             this.Button_About.Size = new System.Drawing.Size(21, 23);
