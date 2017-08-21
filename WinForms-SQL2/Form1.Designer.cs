@@ -119,7 +119,8 @@ namespace WinForms_SQL2
             // 
             // customersDataGridView
             // 
-            this.customersDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.customersDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.customersDataGridView.AutoGenerateColumns = false;
             this.customersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -138,7 +139,7 @@ namespace WinForms_SQL2
             this.customersDataGridView.DataSource = this.customersBindingSource;
             this.customersDataGridView.Location = new System.Drawing.Point(13, 75);
             this.customersDataGridView.Name = "customersDataGridView";
-            this.customersDataGridView.Size = new System.Drawing.Size(535, 301);
+            this.customersDataGridView.Size = new System.Drawing.Size(516, 276);
             this.customersDataGridView.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn1
@@ -209,9 +210,10 @@ namespace WinForms_SQL2
             // 
             // Button_SubmitQuery
             // 
+            this.Button_SubmitQuery.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Button_SubmitQuery.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Button_SubmitQuery.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_SubmitQuery.Location = new System.Drawing.Point(371, 12);
+            this.Button_SubmitQuery.Location = new System.Drawing.Point(352, 13);
             this.Button_SubmitQuery.Name = "Button_SubmitQuery";
             this.Button_SubmitQuery.Size = new System.Drawing.Size(106, 23);
             this.Button_SubmitQuery.TabIndex = 3;
@@ -221,18 +223,21 @@ namespace WinForms_SQL2
             // 
             // textBox1
             // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.Location = new System.Drawing.Point(13, 42);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(464, 20);
+            this.textBox1.Size = new System.Drawing.Size(445, 20);
             this.textBox1.TabIndex = 4;
             this.textBox1.Text = "SELECT * FROM CUSTOMERS WHERE City=\'London\'";
             // 
             // Button_About
             // 
+            this.Button_About.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Button_About.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Button_About.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_About.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_About.Location = new System.Drawing.Point(526, 12);
+            this.Button_About.Location = new System.Drawing.Point(508, 13);
             this.Button_About.Name = "Button_About";
             this.Button_About.Size = new System.Drawing.Size(21, 23);
             this.Button_About.TabIndex = 5;
@@ -244,13 +249,14 @@ namespace WinForms_SQL2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(560, 388);
+            this.ClientSize = new System.Drawing.Size(541, 363);
             this.Controls.Add(this.Button_About);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.Button_SubmitQuery);
             this.Controls.Add(this.customersDataGridView);
             this.Controls.Add(this.submitButton);
             this.Controls.Add(this.resetButton);
+            this.MinimumSize = new System.Drawing.Size(453, 104);
             this.Name = "Form1";
             this.Text = "Windows Forms SQL Example";
             this.Load += new System.EventHandler(this.Form1_Load);
