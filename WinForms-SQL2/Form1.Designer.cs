@@ -60,6 +60,7 @@ namespace WinForms_SQL2
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Button_SubmitQuery = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Button_About = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nORTHWNDDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nORTHWNDDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
@@ -68,6 +69,8 @@ namespace WinForms_SQL2
             // 
             // resetButton
             // 
+            this.resetButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.resetButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.resetButton.Location = new System.Drawing.Point(13, 13);
             this.resetButton.Name = "resetButton";
             this.resetButton.Size = new System.Drawing.Size(75, 23);
@@ -78,6 +81,8 @@ namespace WinForms_SQL2
             // 
             // submitButton
             // 
+            this.submitButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.submitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.submitButton.Location = new System.Drawing.Point(94, 13);
             this.submitButton.Name = "submitButton";
             this.submitButton.Size = new System.Drawing.Size(148, 23);
@@ -131,7 +136,7 @@ namespace WinForms_SQL2
             this.customersDataGridView.DataSource = this.customersBindingSource;
             this.customersDataGridView.Location = new System.Drawing.Point(13, 75);
             this.customersDataGridView.Name = "customersDataGridView";
-            this.customersDataGridView.Size = new System.Drawing.Size(422, 301);
+            this.customersDataGridView.Size = new System.Drawing.Size(535, 301);
             this.customersDataGridView.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn1
@@ -218,12 +223,26 @@ namespace WinForms_SQL2
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(422, 20);
             this.textBox1.TabIndex = 4;
+            this.textBox1.Text = "SELECT * FROM CUSTOMERS WHERE City=\'London\';";
+            // 
+            // Button_About
+            // 
+            this.Button_About.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.Button_About.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_About.Location = new System.Drawing.Point(526, 12);
+            this.Button_About.Name = "Button_About";
+            this.Button_About.Size = new System.Drawing.Size(21, 23);
+            this.Button_About.TabIndex = 5;
+            this.Button_About.Text = "?";
+            this.Button_About.UseVisualStyleBackColor = true;
+            this.Button_About.Click += new System.EventHandler(this.Button_About_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(699, 388);
+            this.ClientSize = new System.Drawing.Size(560, 388);
+            this.Controls.Add(this.Button_About);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.Button_SubmitQuery);
             this.Controls.Add(this.customersDataGridView);
@@ -261,6 +280,7 @@ namespace WinForms_SQL2
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
         private Button Button_SubmitQuery;
         private TextBox textBox1;
+        private Button Button_About;
     }
 }
 
