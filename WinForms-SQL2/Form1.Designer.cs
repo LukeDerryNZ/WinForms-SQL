@@ -119,6 +119,8 @@ namespace WinForms_SQL2
             // 
             // customersDataGridView
             // 
+            this.customersDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.customersDataGridView.AutoGenerateColumns = false;
             this.customersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.customersDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
